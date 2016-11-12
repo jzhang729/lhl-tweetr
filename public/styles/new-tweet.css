@@ -1,0 +1,23 @@
+section.new-tweet {
+    border-radius: 5px;
+    background-color: rgba(72, 68, 68, 0.18);
+    padding: 10px;
+
+}
+
+section.new-tweet h2 {
+    border-bottom: 1px solid #000;
+}
+
+section form textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+section form span.counter {
+    float: right;
+}
+
+.negative {
+    color: red;
+}
