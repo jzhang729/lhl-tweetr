@@ -86,7 +86,7 @@ function bindTweetHover () {
 
 function renderTweets (tweets) {
  tweets.forEach((tweet) => {
-     $('div#tweets-container').append(createTweetElement(tweet));;
+     $('div#tweets-container').prepend(createTweetElement(tweet));;
  })
  bindTweetHover();
 }

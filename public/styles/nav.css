@@ -22,3 +22,17 @@
     font-size: 2em;
     line-height: 2.5;
 }
+
+button.compose {
+    float: right;
+    display: inline;
+    line-height: 2.5;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #e8fdff;
+    margin: 15px 0px;
+}
+
+button.compose:hover {
+    cursor: pointer;
+}
