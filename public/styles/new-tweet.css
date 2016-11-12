@@ -17,6 +17,16 @@ section form span.counter {
     float: right;
 }
 
+span.error {
+    color: red;
+    font-size: 0.75em;
+    margin-left: 1em;
+}
+
+textarea.error {
+    border: 1px solid red;
+}
+
 .negative {
     color: red;
 }

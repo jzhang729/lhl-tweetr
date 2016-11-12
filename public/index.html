@@ -35,34 +35,14 @@
     <main class="container">
         <section class="new-tweet">
             <h2>Compose Tweet</h2>
-            <form method="POST" action="/tweets">
+            <form id="compose-tweet" method="POST" action="/tweets">
                 <textarea name="text" placeholder="What are you humming about?"></textarea>
                 <input type="submit" value="Tweet">
+                <span class="error"></span>
                 <span class="counter">140</span>
             </form>
         </section>
-        <div id="tweets-container">
-            <!-- <article class="tweet">
-                <header class="tweet-header">
-                    <img src="images/bird.png" class="avatar">
-                    <span class="name">BlahBlah</span>
-                    <span class="username">@BlahBlah</span>
-                </header>
-                <main>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolore, dolorem animi labore odit nostrum error dolor quasi consequatur asperiores saepe dicta facere ut iure eum, incidunt. Veritatis, laudantium ipsam.
-                </main>
-                <footer>
-                    10 days ago
-                    <div class="icons">
-                        <i class="fa fa-flag" aria-hidden="true"></i>
-                        <i class="fa fa-refresh" aria-hidden="true"></i>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-
-                </footer>
-            </article> -->
-
+        <div id="tweets-container"></div>
     </main>
-</div>
   </body>
 </html>
