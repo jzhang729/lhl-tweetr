@@ -1,5 +1,6 @@
 $(function () {
-    $('button.compose').on('click', function () {
+    $('#nav-bar ul li.compose').on('click', function () {
+
         if ($(this).hasClass('clicked')) {
             $(this).removeClass('clicked');
             $('section.new-tweet').slideUp(300);
@@ -9,6 +10,7 @@ $(function () {
             $('form#compose-tweet textarea').focus();
             $(this).addClass('clicked');
             $(this).css({'background-color':'#fff'});
+            window.scrollTo(0,0);
         }
     });
 });

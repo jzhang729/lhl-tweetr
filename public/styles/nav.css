@@ -1,5 +1,7 @@
 #nav-bar {
     position: fixed;
+    top: 0px;
+    left: 0px;
     background-color: #00a087;
     color: #e8fdff;
     width: 100%;
@@ -23,16 +25,27 @@
     line-height: 2.5;
 }
 
-button.compose {
+#nav-bar ul {
     float: right;
+    list-style-type: none;
+    margin: 15px 0px;
     display: inline;
-    line-height: 2.5;
+}
+
+#nav-bar ul li {    
+    padding:10px;
     border-radius: 5px;
     border: 1px solid #000;
     background-color: #e8fdff;
-    margin: 15px 0px;
+    font-size: 1em;
+    color: #000;
 }
 
-button.compose:hover {
+#nav-bar ul li i {
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+#nav-bar ul li:hover {
     cursor: pointer;
 }
