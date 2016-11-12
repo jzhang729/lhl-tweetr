@@ -1,27 +1,23 @@
-div#tweets article.tweet {
+div#tweets-container article.tweet {
     border-radius: 5px;
     border: 1px solid #c0c0c0;
     margin: 10px 0px;
-     
 }
 
-div#tweets article.tweet header.tweet-header {
+div#tweets-container article.tweet header.tweet-header {
     background-color: #f3f3f3;
     margin: 0 0 5px 0;
     padding: 5px;
-    height: 50px;
-    
-
+    overflow: auto;
 }
 
-div#tweets article.tweet main {
-    padding: 15px;   
+div#tweets-container article.tweet main {
+    padding: 15px;
 }
 
-div#tweets article.tweet footer {
+div#tweets-container article.tweet footer {
     border-top: 1px solid #f3f3f3;
     padding: 15px;
-
 }
 
 header.tweet-header img.avatar {
@@ -46,4 +42,19 @@ header.tweet-header span.username {
     vertical-align: top;
     font-weight: 300;
     margin-top: 5px;
+}
+
+footer div.icons {
+    display: none;    
+    float: right;
+    color: #66c6b7;
+}
+
+footer div.icons * {
+    padding: 0 10px;
+}
+
+footer span.time-ago {
+    display: inline-block;
+
 }

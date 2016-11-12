@@ -6,9 +6,11 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 
 /*
  * Global layout stuff
@@ -27,7 +29,7 @@ body {
 
 main.container {
     width: 450px;
-    height: 100vh;
+    overflow: auto;
     margin: 0px auto;
     padding: 10px;
     background-color: #fff;
