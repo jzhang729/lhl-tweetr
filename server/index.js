@@ -27,4 +27,20 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
     });
 
     app.use("/", tweetsRoutes(DataHelpers(dbInstance)));
+
+    function gracefulShutdown() {
+        console.log("Shutting down gracefully...");
+        try {
+            dbInstance.close();
+        } catch (e) {
+            console.log("Failed to disconnect from Mongo...");
+            throw e;
+        } finally {
+            console.log("Bye for now");
+            process.exit();
+        }
+    }
+
+    process.on("SIGTERM", gracefulShutdown); // listen for TERM signal .e.g. kill
+    process.on("SIGINT", gracefulShutdown);  // listen for INT signal e.g. Ctrl-C
 });
