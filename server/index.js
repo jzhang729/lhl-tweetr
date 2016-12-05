@@ -13,9 +13,6 @@ const tweetsRoutes     = require("./routes/tweets");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-// The in-memory database of tweets. It's a basic object with an array in it.
-// const db = require("./lib/in-memory-db");
-
 let dbInstance;
 
 MongoClient.connect(MONGODB_URI, (err, db) => {
@@ -30,6 +27,4 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
     });
 
     app.use("/", tweetsRoutes(DataHelpers(dbInstance)));
-
-    // db.close();
 });
