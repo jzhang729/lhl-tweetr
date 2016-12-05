@@ -99,6 +99,6 @@ $(function () {
         });
     }
 
-    // loadTweets();
+    loadTweets();
 
 });
