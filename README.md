@@ -20,8 +20,11 @@ The end result should look and function like this:
 
 1. Fork and clone your fork of this repository.
 2. Install dependencies: `npm install` or `npm i` for short.
+3. Create a .env file and add the following lines:
+    - MONGODB_URI="mongodb://127.0.0.1:27017/tweeter"
 3. Start the web server from the command line: `npm run local`
-4. Open the app on <http://localhost:8080/> and make sure that it's loading.
+4. Seed the database by running `npm run seed`
+5. Open the app on <http://localhost:8080/> and make sure that it's loading.
 
 ## Dependencies & Troubleshooting
 
@@ -32,8 +35,4 @@ Dependencies:
 
 **This project assumes that:**
 
-- It is running in our Vagrant machine (and therefore...)
 - It is Running with Node 5.10.x or above
-
-
-
